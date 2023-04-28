@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script defer src="index.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Pre-Entrega3</title>
+
+</head>
+
+<body>
+    <header class="header" id="header">
+        <a class="headerIzq" href="index.html">
+            <img src="img/logoSinFondo.png" width="172" height="55" alt="Logotipo">
+        </a>
+        <h1 class="headerCen">Physical Therapy Solutions</h1>
+        <p class="headerDer" id="headerDer"></p>
+
+    </header>
+
+<section id="formulario" class="CheckBox">
+
+    
+    <h1>Inicia Sesion</h1>
+    <form name="authentication" id="authentication" class="authentication">
+        <label for="username">Ingresa tu usuario :</label>
+        <br>
+        <input class="campos" type="text" name="username" id="username" minlength="3" maxlenth="15" pattern="[a-zA-Z0-9]+" required>
+        <br>
+        <label for="password">Ingresa tu contraseña :</label>
+        <br>
+        <input class="campos" type="password" name="password" id="password" minlength="8" maxlength="15" pattern="[a-zA-Z0-9]+"
+            required>
+        <br>
+        <input class="btnSub" id="sub" type="submit" value="Iniciar Sesion" ></input>
+        <button class="btnRule" id="rule" type="button" onclick="Show(id);">Users Auth</button>
+      </form>
+      <div id="rules">
+      <p>usuario: coderhouse</p>
+      <p>contrasena: contrasena01</p>
+      <p>usuario: alfredo2106</p>
+      <p>contrasena: contrasena21</p>
+      <p>usuario: invitado21</p>
+      <p>contrasena: contrasena06</p>
+    </div>
+
+    
+</section>
+
+
+<section id="sesion">
+    <nav class="navbar" id="navbar">
+        <h3 class="datosPaciente"> </h3>
+    </nav>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Videos')">Videos</button>
+        <button class="tablinks" onclick="openTab(event, 'Pacientes')">Pacientes</button>
+        <button class="tablinks" onclick="openTab(event, 'Nosotros')">Nosotros</button>
+      </div>
+      
+      <div id="Videos" class="tabcontent">
+        <h3>Videos</h3>
+        <p> Videos disponibles para visualizar en la aplicacion</p>
+        <div class="videoContainer"></div>
+
+      </div>
+      
+      <div id="Pacientes" class="tabcontent">
+        <h3>Pacientes</h3>
+      </div>
+      
+      <div id="Nosotros" class="tabcontent">
+        <h3>Nosotros</h3>
+        <p>Suspendisse et felis urna. Nullam tempor orci dapibus sem commodo posuere. Nam ut est euismod, vulputate magna vel, mollis elit. Morbi libero magna, ultricies sit amet vulputate in, congue sed quam. Sed in est nisl. Proin lacus lectus, porta nec velit vitae, imperdiet sodales lorem. Aenean semper venenatis elit vitae bibendum. Nullam rhoncus tellus lacinia felis molestie maximus. Sed pretium euismod sollicitudin. Etiam metus diam, sagittis eget pretium id, accumsan vitae felis. Duis consequat id enim non porttitor. Nam vel nisl elit. Aliquam erat volutpat. Nulla et lectus at felis suscipit venenatis. Nam eleifend eros a ullamcorper dapibus.
+
+            Mauris rhoncus, erat et laoreet euismod, magna magna sodales massa, sed lacinia dui tellus eu quam. Donec sit amet nulla leo. Etiam orci elit, vestibulum id ultrices commodo, varius vitae purus. Vivamus posuere orci a ipsum euismod, vitae finibus est hendrerit. Aenean ultricies feugiat aliquam. Aenean non tristique odio. Aliquam consequat, diam eu fermentum ornare, neque enim feugiat nulla, tristique tincidunt ex enim ut sapien. Aliquam et porttitor velit, sed rutrum sem. Morbi vel efficitur dolor. Morbi augue orci, interdum ac dui ut, finibus tincidunt eros. Cras a velit vel nunc scelerisque vulputate at non nunc. Suspendisse imperdiet non turpis vitae efficitur. Integer mollis maximus auctor. Nunc vehicula, metus in vulputate auctor, mauris erat fringilla purus, vitae placerat dui sapien volutpat augue. Vestibulum vestibulum sem ligula, in semper dui consectetur ut. Praesent mauris enim, fringilla vel nunc vitae, aliquam tincidunt lorem.</p>
+      </div>
+
+
+
+
+
+
+</section>
+
+
+</body>
+
+</html>
